@@ -8,5 +8,7 @@ P = |pusai1> <pusai1| + (-1) * |pusai2> <pusai2|
 exp(i * theta * P) = exp(i * theta) |pusai1> <pusai1|+exp(-i * theta)) |pusai2> <pusai2|
 = cos(theta) * (|pusai1> <pusai1| + |pusai2> <pusai2|) + i * theta * (|pusai1> <pusai1| - |pusai2> <pusai2|)
 =cos(theta) * I + i * sin(theta) * P
-条件：P的特征值是1和-1
+条件: P的特征值是1和-1
 
+2-5 狄拉克符号
+1/sqrt(2) (|010> - |101>)=[0, 0, 1/sqrt(2), 0, 1/sqrt(2), 0, 0, 0]
