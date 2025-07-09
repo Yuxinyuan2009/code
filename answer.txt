@@ -12,3 +12,11 @@ exp(i * theta * P) = exp(i * theta) |pusai1> <pusai1|+exp(-i * theta)) |pusai2> 
 
 2-5 狄拉克符号
 1/sqrt(2) (|010> - |101>)=[0, 0, 1/sqrt(2), 0, 1/sqrt(2), 0, 0, 0]
+
+3-2 三角函数数值微分
+f(x) = A sin(x + B) + C
+f的导数为： A cos(x + B)
+f'(x) = [f(x + s) - f(x - s)] / t
+f(x + s) - f(x - s) = 2 * A * cos(x + B) * sin s
+只需C = 0, 2 * sin s = t
+
