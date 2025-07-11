@@ -34,4 +34,4 @@ for theta in np.linspace(0, math.pi, 100):
     w = w.real
     plt.plot(theta, w, 'o')
     print(theta, w)
-    plt.savefig("quantum_plot.png")
+plt.savefig("quantum_plot.png")
