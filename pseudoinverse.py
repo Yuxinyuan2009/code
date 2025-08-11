@@ -19,6 +19,8 @@ def pseudoinverse(A: np.ndarray) -> np.ndarray:
     return A_inv
 A = np.array([[1., 1., 2.], [1., 2., 1.], [1., 1., 1.]])
 B = pseudoinverse(A)
+print(B)
+print(np.linalg.pinv(A))
 print(B @ A)
 v = np.arange(3)
 print(B @ A @ v)
