@@ -14,7 +14,7 @@ def mod_add(x, y, z):
     c.x(y[0])
     c.append(add(x, y))
     return c
-
+'''
 for i in range(7):
     for j in range(7):
         c = tc.Circuit(9)
@@ -28,3 +28,4 @@ for i in range(7):
 c = tc.Circuit(9)
 c.append(mod_add(list(range(4)), list(range(4, 8)), [8]))
 c.draw(output="mpl").savefig("mod_add.png")
+'''
