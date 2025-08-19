@@ -1,5 +1,4 @@
 import tensorcircuit as tc
-import numpy as np
 
 def set(n, x):
     '''

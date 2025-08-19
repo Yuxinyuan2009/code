@@ -1,9 +1,11 @@
 import tensorcircuit as tc
-import numpy as np
 from add_const import *
-import matplotlib
+
 def mod_add(x, y, z):
-    c = tc.Circuit(max(x + y + z) + 2)
+    '''
+    |x>|y> -> |x>|x+y(mod p)>
+    '''
+    c = tc.Circuit(max(x + y + z) + 1)
     c.append(add(x, y))
     c.append(add_const(y, 9))
     c.cnot(y[0], z[0])
@@ -33,7 +35,7 @@ def cmod_add(p, x, y, z):
     '''
     p: control qubit z[0]: ancilla qubit
     '''
-    c = tc.Circuit(max(x + y + z + [p]) + 2)
+    c = tc.Circuit(max(x + y + z + [p]) + 1)
     c.append(cadd(p, x, y))
     c.append(add_const(y, 9))
     c.toffoli(p, y[0], z[0])
