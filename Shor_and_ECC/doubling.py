@@ -1,5 +1,4 @@
 import tensorcircuit as tc
-import numpy as np
 from mod_add import *
 
 def doubling(x, z):
