@@ -37,7 +37,7 @@ def cmod_add(p, x, y, z):
     '''
     c = tc.Circuit(max(x + y + z + [p]) + 1)
     c.append(cadd(p, x, y))
-    c.append(add_const(y, 9))
+    c.append(cadd_const(p, y, 9))
     c.toffoli(p, y[0], z[0])
     c.append(ccadd_const(p, z[0], y, 7))
     c.append(cadd(p, x, y).inverse())
