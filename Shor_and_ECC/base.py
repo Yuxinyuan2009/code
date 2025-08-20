@@ -16,7 +16,7 @@ def set(n, x):
 def out(x):
     for i in range(len(x)):
         if abs(x[i]) > 0.001:
-            print(i, end=" ")
+            print(i % 16, end=" ")
 
 # for i in range(16):
 #     c = tc.Circuit(4)
