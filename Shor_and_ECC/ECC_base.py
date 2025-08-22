@@ -96,7 +96,7 @@ def cond_ECC_add(p, x1, y1, x2, y2, a, z):
     c.x(p)
     return c
 
-
+'''
 c = tc.Circuit(14)
 c.append(set(3, [6, 7, 8, 9]))
 c.append(set(3, [10, 11, 12, 13]))
@@ -105,4 +105,5 @@ c.append(cond_ECC_add(5, 2, 5, [6, 7, 8, 9], [10, 11, 12, 13], 3, [1, 2, 3, 4, 0
 c.x(5)
 out(c.state())
 print(c.gate_count())
-c.draw(output="mpl").savefig("ECC_add.png")
+11123 gates
+'''
